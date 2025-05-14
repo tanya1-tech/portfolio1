@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanya's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #f7f9fc; color: #333; }
+    header { background: #0d1117; color: #fff; padding: 2rem; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+
+    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    .about, .skills, .projects, .contact { margin-bottom: 4rem; }
+
+    h2 { font-size: 2rem; color: #0d1117; margin-bottom: 1rem; text-align: center; }
+    .about p { font-size: 1.1rem; line-height: 1.6; text-align: center; }
+
+    .skills ul { display: flex; flex-wrap: wrap; list-style: none; justify-content: center; }
+    .skills li { background: #e4e4e4; margin: 0.5rem; padding: 0.5rem 1rem; border-radius: 5px; transition: transform 0.3s ease; }
+    .skills li:hover { transform: scale(1.05); }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .project-card { background: #fff; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .project-card img { max-width: 100%; height: auto; border-radius: 5px; }
+    .project-card h3 { margin-top: 0.5rem; }
+
+    .contact form { display: flex; flex-direction: column; max-width: 600px; margin: auto; }
+    .contact input, .contact textarea { padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    .contact button { padding: 0.75rem; background: #0d1117; color: #fff; border: none; cursor: pointer; transition: background 0.3s ease; }
+    .contact button:hover { background: #333; }
+
+    footer { background: #0d1117; color: #fff; text-align: center; padding: 1rem; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 2rem 1rem; }
+      .skills ul { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tanya S Poojari</h1>
+    <p>Creative Web Designer | UI/UX Enthusiast</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm a passionate web designer who loves creating beautiful and functional user experiences. I specialize in responsive designs and enjoy working on both personal and freelance projects.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Figma</li>
+      <li>VScode </li>
+      <li>Wordpress</li>
+      <li>Canva</li>
+      <li>Sketchbook</li>
+      <li>Photopea</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!--project 1-->
+      <div class="project-card">
+        <!--<img src="" alt="video of expanding cards project">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Expandingcards.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Expanding Cards</h3>
+        <p>The Expanding Cards Panel is a sleek, interactive web component designed to enhance user experience through visually engaging, animated panels. Built with HTML, CSS, and JavaScript, this project demonstrates a clean and responsive design where each card (or panel) expands on click to reveal more content, drawing the user’s attention and creating a dynamic browsing experience.</p>
+        <a href="#">View Project</a>
+      </div>
+      <!--project 2-->
+      
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src=".mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Rotating Navigation</h3>
+        <p></p>
+        <a href="#">View Project</a>
+      </div>
+
+      <!--project 3-->
+      
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src=".mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Rotating Navigation</h3>
+        <p></p>
+        <a href="#">View Project</a>
+      </div>
+
+      <!--project 4-->
+      
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src=".mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Rotating Navigation</h3>
+        <p></p>
+        <a href="#">View Project</a>
+      </div>
+
+      <!--project 5-->
+      
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src=".mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Rotating Navigation</h3>
+        <p></p>
+        <a href="#">View Project</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+    
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Thankyou</p>
+  </footer>
+</body>
+</html>
